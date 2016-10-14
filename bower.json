@@ -6,13 +6,7 @@
     "Shelby Clayton"
   ],
   "license": "ISC",
-  "keywords": [
-    "github",
-    "user",
-    "profiles"
-  ],
-  "homepage": "",
-  "private": true,
+  "homepage": "https://github.com/Shabis/js_git-lookup",
   "ignore": [
     "**/.*",
     "node_modules",

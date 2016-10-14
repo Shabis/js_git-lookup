@@ -1,0 +1,28 @@
+{
+  "name": "js_git-lookup",
+  "description": "This is an application to look up github user information.",
+  "main": "gulpfile.js",
+  "authors": [
+    "Shelby Clayton"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "github",
+    "user",
+    "profiles"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "moment": "^2.15.1"
+  }
+}

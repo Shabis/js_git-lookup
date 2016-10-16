@@ -1,4 +1,4 @@
-# Wildlife Tracker
+# GitHub User Lookup
 ------
 
 In this application we are creating a website that allows a user to search github users.
@@ -10,7 +10,7 @@ In this application we are creating a website that allows a user to search githu
 
 * In command prompt enter: git clone https://github.com/Shabis/js_git-lookup.git
 * In command prompt enter: cd js_git-lookup
-* In command prompt enter: npm init
+* In command prompt enter: npm init -yes
 * In command prompt enter: npm install -1
 * In command prompt enter: bower install
 * In command prompt enter: gulp build

@@ -7,9 +7,10 @@ var User = require('./../js/user.js').userModule;
 //   document.body.appendChild(img);
 // }
 
-var displayLogin = function(ghName, loginData, name) {
+var displayLogin = function(ghName, loginData, name, location) {
   $('.userLogin').text("Username: " + loginData);
   $('.userName').text("Name: " + name);
+  $('.userLocation').text("Location: " + location);
 };
 
 $(document).ready(function() {

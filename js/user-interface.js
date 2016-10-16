@@ -1,14 +1,20 @@
 var User = require('./../js/user.js').userModule;
-var apiKey = require('./../.env').apiKey;
+
+// function show_image(src, alt) {
+//   var img = document.createElement("img");
+//   img.src = response.avatar_url;
+//   img.alt = 'user avatar';
+//   document.body.appendChild(img);
+// }
+
+var displayLogin = function(ghName, loginData) {
+  $('.userLogin').text("Username: " + loginData);
+};
 
 $(document).ready(function() {
-  var searchedUser = new User();
-  $('#ghNameSearch').click(function() {
+  var currentUser = new User();
+  $('#submitUserName').click(function() {
     var ghName = $('#gitHubName').val();
-    $('#gitHubName').val("");
-    $.get('https://api.github.com/users?q=' + ghName + '?access_token=' + apiKey, function(response) {
-      $('.box').text(response.login);;
-    });
-    // searchedUser.getRepos(searchedUser.ghName);
+    currentUser.getRepos(ghName, displayLogin);
   });
 });

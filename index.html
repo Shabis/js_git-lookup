@@ -4,17 +4,16 @@
     <link rel="stylesheet" href="build/css/vendor.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <title>Git Lookup</title>
+    <title>GitHub Lookup</title>
   </head>
   <body>
     <div class="container">
-      <form id="ghNameSearch">
-        <label for="gitHubName">Search by GitHub Name:</label>
-        <input id="gitHubName" name="gitHubName" type="text">
-        <button type="button" class="btn btn-info">Submit</button>
-      </form>
-    </div>
-    <div class="box">
+      <h1></h1>
+      <label for="gitHubName">Enter Github UserName</label>
+      <input id="gitHubName" type="text">
+      <button type="submit" class="btn-danger" id="submitUserName">Submit</button>
+      <div class="error"></div>
+      <div class="userLogin"></div>
     </div>
   </body>
 </html>

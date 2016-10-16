@@ -1,16 +1,10 @@
 var User = require('./../js/user.js').userModule;
 
-// function show_image(src, alt) {
-//   var img = document.createElement("img");
-//   img.src = response.avatar_url;
-//   img.alt = 'user avatar';
-//   document.body.appendChild(img);
-// }
-
-var displayLogin = function(ghName, loginData, name, location) {
-  $('.userLogin').text("Username: " + loginData);
-  $('.userName').text("Name: " + name);
-  $('.userLocation').text("Location: " + location);
+var displayLogin = function(ghName, avatar, login, name, location) {
+  $('.userProfile').append("<img src=" + avatar + ">");
+  $('#userLogin').text("Username: " + login);
+  $('#userName').text("Name: " + name);
+  $('#userLocation').text("Location: " + location);
 };
 
 $(document).ready(function() {

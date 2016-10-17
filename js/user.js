@@ -11,14 +11,16 @@ User.prototype.getRepos = function(ghName, displayUser) {
   });
 };
 
-User.prototype.getRepoList = function(ghName, displayUser) {
+User.prototype.getRepoList = function(ghName, displayUserRepo) {
+  var repositories = [];
   $.get('https://api.github.com/users/' + ghName +'/repos?access_token=' + apiKey).then(function(repository) {
-    for (i = 0; i < repository.Length; i++) {
-    displayUser(ghName, repository.description);
-  };
-  }).fail(function(error) {
-    $('.error').text("No Repositories were found.");
+    for (var i = 0; i < repository.length; i++) {
+      repositories.push(repository[i]);
+      console.log(repositories);
+    } repositories.forEach(function(repository) {
+        displayUserRepo(ghName, repository.name);
+    });
   });
 };
-
+ // for (var i = 0; i < repository.length; i++)
 exports.userModule = User;

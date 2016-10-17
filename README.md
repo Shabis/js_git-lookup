@@ -13,7 +13,6 @@ In this application we are creating a website that allows a user to search githu
 * In command prompt enter: npm init -yes
 * In command prompt enter: npm install -1
 * In command prompt enter: bower install
-* In command prompt enter: gulp build
 * In command prompt enter: gulp serve
 
 <br/>

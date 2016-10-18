@@ -2,14 +2,14 @@ var User = require('./../js/user.js').userModule;
 
 var displayUserProfile = function(ghName, avatar, login, name, location, repoList) {
   $('.userProfile').append("<img src=" + avatar + ">");
-  $('#userLogin').append("<h3>Username: " + login + "</h3>");
-  $('#userName').text("Name: " + name);
-  $('#userLocation').text("Location: " + location);
+  $('#userLogin').append("<h3>GitHub Name: " + login + "</h3>");
+  $('#userName').text("User's Name: " + name);
+  $('#userLocation').text("User's Location: " + location);
 
 };
 
-var displayUserRepoList = function(ghName, name) {
-  $('#userRepoList').append("<li> Name: " + name + "</li>");
+var displayUserRepoList = function(ghName, name, description) {
+  $('#userRepoList').append("<li> Repository Name: " + name + "</li>" + "Repository Description: " + description + "<br><br>");
 };
 
 $(document).ready(function() {

@@ -18,9 +18,9 @@ User.prototype.getRepoList = function(ghName, displayUserRepo) {
       repositories.push(repository[i]);
       console.log(repositories);
     } repositories.forEach(function(repository) {
-        displayUserRepo(ghName, repository.name);
+        displayUserRepo(ghName, repository.name, repository.description);
     });
   });
 };
- // for (var i = 0; i < repository.length; i++)
+
 exports.userModule = User;

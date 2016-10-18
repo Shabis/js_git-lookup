@@ -13,6 +13,10 @@ In this application we are creating a website that allows a user to search githu
 * In command prompt enter: npm init -yes
 * In command prompt enter: npm install -1
 * In command prompt enter: bower install
+* Open Project in Atom
+  * Create a file in the top of the project directory named: '.env'
+  * Add apiKey from to '.env' file in the following format:
+    * exports.apiKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 * In command prompt enter: gulp serve
 
 <br/>

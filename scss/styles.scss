@@ -1,0 +1,44 @@
+* {
+  text-align: center;
+}
+
+html body {
+  font-weight: 100;
+  background: #5BA3FF;
+}
+
+#userInput {
+  background: #FFF;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+#userInput input[type="text"],
+#userInput textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#userInput input[type="text"]:hover,
+#userInput textarea:hover {
+  border: 1px solid #aaa;
+}
+
+#userInput button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #4CAF50;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#userInput button[type="submit"]:hover {
+  background: #43A047;
+}

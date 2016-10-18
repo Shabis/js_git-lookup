@@ -16,6 +16,7 @@ $(document).ready(function() {
   var currentUser = new User();
   $('#submitUserName').click(function(event) {
     event.preventDefault();
+    $('#userInput').hide();
     var ghName = $('#gitHubName').val();
     $('#gitHubName').val("");
     currentUser.getRepos(ghName, displayUserProfile);
